@@ -1,0 +1,191 @@
+.profileContainer {
+    background: white;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    .topHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.sidebarTabs {
+    flex-direction: column;
+    align-items: flex-start;
+    border-right: 1px solid #ccc;
+    min-width: 200px;
+
+    .MuiTabs-flexContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .MuiTab-root {
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        text-transform: none;
+        font-weight: normal;
+        color: #555;
+        border-bottom: 1px solid #ccc;
+        padding: 12px 16px;
+        font-size: 16px;
+        text-align: left;
+
+        &.Mui-selected {
+            font-weight: bold;
+            border-left: 4px solid black;
+            background-color: #f9f9f9;
+            color: black;
+        }
+    }
+}
+
+.avatarSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+
+    .MuiAvatar-root {
+        width: 80px;
+        height: 80px;
+    }
+
+    .MuiIconButton-root {
+        margin-top: 8px;
+        background-color: transparent;
+    }
+
+    .uploadLabel {
+        margin-top: 8px;
+        font-size: 14px;
+        text-decoration: underline;
+        color: #000;
+        cursor: pointer;
+    }
+}
+
+.formSection {
+    padding: 10px 20px;
+
+    .MuiFormControl-root,
+    .MuiTextField-root {
+        margin-bottom: 16px;
+
+        label {
+            font-size: 14px;
+        }
+
+        .MuiInputBase-root {
+            border-radius: 0;
+        }
+    }
+}
+
+.buttonGroup {
+    justify-content: flex-start;
+
+    .MuiButton-root {
+        text-transform: uppercase;
+        border-radius: 0;
+        font-weight: bold;
+        padding: 10px 20px;
+
+        &:first-child {
+            background-color: black;
+            color: white;
+        }
+
+        &:last-child {
+            border-color: black;
+            color: black;
+        }
+    }
+}
+.backLink {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 8px;
+  
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+
+  .profileHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     @media (max-width: 600px) {
+    display: block;
+  }
+  }
+  
+  .profileHeader h1 {
+    font-size: 2em;
+    font-weight: normal;
+    width: 80%;
+  }
+  
+  .profileHeader strong {
+    font-weight: bold;
+  }
+  
+  .profileHeader .line {
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background: #222;
+    margin-left: 16px;
+    vertical-align: middle;
+    width: 80%;
+  }
+  
+  .profileContainer {
+  padding: 40px;
+  @media (max-width: 600px) {
+    padding: 10px;
+  }
+}
+.sidebarTabs {
+  min-width: 200px;
+  @media (max-width: 600px) {
+    min-width: 0;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+}
+.formSection {
+  padding: 10px 20px;
+  @media (max-width: 600px) {
+    padding: 5px 0;
+  }
+}
+.avatarSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+  @media (max-width: 600px) {
+    padding-top: 0;
+    margin-bottom: 16px;
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 16px;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+}

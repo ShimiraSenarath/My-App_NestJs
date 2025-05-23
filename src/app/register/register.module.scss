@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('/your-background.jpg') no-repeat center center / cover;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  
+    button,
+    img {
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      background: transparent;
+      font-weight: bold;
+    }
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card h1 {
+    font-size: 24px;
+    font-weight: normal;
+  
+    strong {
+      font-weight: bold;
+    }
+  }
+  
+  .card{
+    hr {
+        margin: 20px auto;
+        border: 0;
+        border-top: 1px solid #333;
+        width: 60px;
+      }
+  }
+ 
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+  }
+  
+  .form label {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .form{
+    input[type='text'],
+  input[type='password'] {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  }
+  
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+  }
+  
+  .registerButton {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .registerButton:hover {
+    opacity: 0.9;
+  }
+  
+  .loginLink {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+  
+    a {
+      color: #000;
+      text-decoration: underline;
+    }
+  }
+  
+  .errorText {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .error {
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(64, 64, 64, 0.9);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
