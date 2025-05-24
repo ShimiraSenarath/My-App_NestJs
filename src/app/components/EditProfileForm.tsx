@@ -125,14 +125,14 @@ export default function ProfileFormTabs() {
 
             const result = await res.json();
             if (result.success) {
-                alert('Profile saved successfully!');
+                console.log('Profile saved successfully!');
                 setTab((prev) => Math.min(prev + 1, 3));
             } else {
-                alert('Failed to save profile.');
+                console.log('Failed to save profile.');
             }
         } catch (err) {
             console.error(err);
-            alert('Something went wrong.');
+            console.log('Something went wrong.');
         }
     };
 
