@@ -117,7 +117,7 @@ export default function ProfileFormTabs() {
                 formData.append('avatar', avatarFile);
             }
 
-            const res = await fetch('/api/profile', {
+            const res = await fetch('/api/EditProfile', {
                 method: 'POST',
                 body: formData,
                 credentials: 'include',
