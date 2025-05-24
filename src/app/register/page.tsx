@@ -46,7 +46,7 @@ const onSubmit = async (data: RegisterFormInputs) => {
       if (!response.ok) {
         setFormError(result.error || 'Registration failed. Please try again.');
       } else {
-        alert('Registration successful!');
+        console.log('Registration successful!');
         router.push('/login');
       }
     } catch (err) {
